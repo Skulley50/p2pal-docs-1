@@ -1,0 +1,312 @@
+/* P2PAL GitBook-exact styling */
+
+:root {
+  /* P2PAL Purple Brand Colors */
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #e9d5ff;
+  
+  /* GitBook fonts */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --ifm-font-family-monospace: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  
+  /* P2PAL Light Theme */
+  --ifm-background-color: #fefefe;
+  --ifm-sidebar-background: #f3f4f6;
+  --ifm-color-content: #1f2937;
+  --ifm-color-content-secondary: #6b7280;
+  --ifm-toc-border-color: #e5e7eb;
+  --ifm-navbar-background: #ffffff;
+  
+  /* Purple tint background */
+  --ifm-background-surface-color: #faf7ff;
+}
+
+
+
+[data-theme='dark'] {
+  /* P2PAL Dark Theme - matches your dark mode */
+  --ifm-background-color: #1a1a1a;
+  --ifm-sidebar-background: #2d2d2d;
+  --ifm-color-content: #e5e7eb;
+  --ifm-color-content-secondary: #9ca3af;
+  --ifm-toc-border-color: #374151;
+  --ifm-navbar-background: #1a1a1a;
+  --ifm-background-surface-color: #1e1b26;
+}
+
+/* Body background with subtle purple tint */
+html[data-theme='light'] {
+  background: linear-gradient(135deg, #faf7ff 0%, #f8fafc 100%);
+}
+
+html[data-theme='dark'] {
+  background: linear-gradient(135deg, #1e1b26 0%, #1a1a1a 100%);
+}
+
+/* Navbar - exact GitBook style */
+.navbar {
+  background: var(--ifm-navbar-background);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar - exact GitBook purple styling */
+.theme-doc-sidebar-container {
+  background: var(--ifm-sidebar-background);
+  border-right: 1px solid var(--ifm-toc-border-color);
+  width: 280px;
+}
+
+.theme-doc-sidebar-menu {
+  padding: 1.5rem 0;
+}
+
+/* Sidebar items - GitBook style */
+.menu__link {
+  font-size: 0.875rem;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 0.125rem 1rem;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: rgba(139, 92, 246, 0.1);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.menu__link--active {
+  background: var(--ifm-color-primary);
+  color: white;
+  font-weight: 500;
+}
+
+/* Category labels */
+.menu__list-item-collapsible .menu__link {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ifm-color-content);
+}
+
+/* Main content area */
+.main-wrapper {
+  background: var(--ifm-background-surface-color);
+}
+
+.container.padding-top--md.padding-bottom--lg {
+  max-width: 1024px;
+  padding: 2rem 2rem;
+}
+
+/* Typography - GitBook style */
+.markdown h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-content);
+}
+
+.markdown h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-content);
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-content);
+}
+
+.markdown p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  color: var(--ifm-color-content);
+}
+
+/* Links */
+.markdown a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Table of contents */
+.table-of-contents {
+  border-left: 2px solid var(--ifm-toc-border-color);
+  padding-left: 1rem;
+}
+
+.table-of-contents__link {
+  font-size: 0.875rem;
+  color: var(--ifm-color-content-secondary);
+  padding: 0.25rem 0;
+  display: block;
+  border-radius: 0.25rem;
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Search bar styling */
+.DocSearch-Button {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 0.5rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* Footer */
+.footer {
+  background: var(--ifm-sidebar-background);
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+/* Content cards/boxes */
+.alert {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  background: rgba(139, 92, 246, 0.05);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 0.75rem;
+  border: 1px solid var(--ifm-toc-border-color);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Remove default margins on wrapper */
+.theme-doc-root {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Fix for active sidebar item readability */
+.menu__link--active {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+}
+
+/* Professional navbar title styling */
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1f2937 !important; /* Black in light mode */
+}
+
+[data-theme='dark'] .navbar__title {
+  color: #ffffff !important; /* White in dark mode */
+}
+
+/* Fix for hero banner image switching - override previous styles */
+.hero-banner-light {
+  display: block !important;
+}
+
+.hero-banner-dark {
+  display: none !important;
+}
+
+[data-theme='dark'] .hero-banner-light {
+  display: none !important;
+}
+
+[data-theme='dark'] .hero-banner-dark {
+  display: block !important;
+}
+
+/* Make the navbar logo bigger */
+.navbar__logo img {
+  height: 40px !important; /* Default is usually around 24px */
+  width: auto;
+}
+
+/* Ensure it looks good on mobile too */
+@media (max-width: 768px) {
+  .navbar__logo img {
+    height: 35px !important;
+  }
+}
+
+/* Make logo bigger and center it vertically */
+.navbar__logo img {
+  height: 50px !important; /* Made it bigger */
+  width: auto;
+  vertical-align: middle; /* Center vertically */
+}
+
+/* Ensure navbar has proper height for the bigger logo */
+.navbar {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .navbar__logo img {
+    height: 45px !important;
+  }
+  
+  .navbar {
+    min-height: 55px;
+  }
+}
+
+/* Move logo up by adjusting its positioning */
+.navbar__logo img {
+  height: 50px !important;
+  width: auto;
+  margin-top: -5px !important; /* Move it up */
+  vertical-align: middle;
+}
+
