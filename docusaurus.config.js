@@ -1,7 +1,7 @@
 module.exports = {
   title: 'P2PAL Documentation',
   tagline: 'Your P2PAL Documentation',
-  url: 'https://your-domain.vercel.app',
+  url: 'https://docs.p2pal.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
