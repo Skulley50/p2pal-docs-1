@@ -25,7 +25,14 @@ module.exports = {
   ],
 
   themeConfig: {
-    image: 'img/p2pal-graphic.jpg', 
+    image: 'img/p2pal-graphic.jpg',
+    metadata: [
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'twitter:image', content: 'https://docs.p2pal.io/img/p2pal-graphic.jpg'},
+      {name: 'twitter:title', content: 'P2PAL Documentation'},
+      {name: 'twitter:description', content: 'Your P2PAL Documentation'},
+    ],
+    
     
     navbar: {
       title: 'P2PAL',
