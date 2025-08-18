@@ -25,6 +25,8 @@ module.exports = {
   ],
 
   themeConfig: {
+    image: 'img/p2pal-graphic.jpg', 
+    
     navbar: {
       title: 'P2PAL',
       logo: {
