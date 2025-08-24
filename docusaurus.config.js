@@ -28,7 +28,7 @@ module.exports = {
     image: 'img/p2pal-graphic.jpg',
     metadata: [
       {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:image', content: 'https://docs.p2pal.io/img/P2PAL-Twitter-Graphic.jpg'},
+      {name: 'twitter:image', content: 'https://docs.p2pal.io/img/p2pal-graphic-small.jpg'},
       {name: 'twitter:title', content: 'P2PAL Documentation'},
       {name: 'twitter:description', content: 'Your P2PAL Documentation'},
     ],
